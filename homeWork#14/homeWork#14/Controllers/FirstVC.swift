@@ -30,31 +30,23 @@ class FirstVC: UIViewController {
         navigationController?.pushViewController(fouthVC, animated: true)
     }
     
-    @IBAction func goToFouthWithSegue() {
-        
+    @IBAction func unwindToFirstVC(_ unwindSegue: UIStoryboardSegue) {
+        if let fouthVC = unwindSegue.source as? FouthVC {
+            labelText.text = fouthVC.dataString
+        }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToSecondVC",
+        if segue.identifier == "goToSeconVC",
            let secondVC = segue.destination as? SecondVC,
            let dataString = sender as? String {
             secondVC.dataString = dataString
             secondVC.firstVC = self
+        } else if segue.identifier == "goToFouthVC",
+                  let fouthVC = segue.destination as? FouthVC {
+            fouthVC.dataString = "Hello from FirstVC"
         }
     }
 }
+

@@ -19,6 +19,6 @@ class FouthVC: UIViewController {
     }
     
     @IBAction func backAction(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "unwindToFirstVC", sender: nil)
     }
 }

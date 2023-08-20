@@ -194,7 +194,7 @@ send Data</string>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separetad Storyboard with segue and send Data"/>
                                         <connections>
-                                            <action selector="goToFouthWithSegue" destination="tRt-zf-Gv9" eventType="touchUpInside" id="HVC-0c-gO3"/>
+                                            <segue destination="k1W-Mh-Jcl" kind="show" identifier="goToFouthVC" id="B4Z-Ao-fPa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -227,6 +227,16 @@ send Data</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tv5-u7-2Lf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1315" y="1461"/>
+        </scene>
+        <!--SecondStoryboard-->
+        <scene sceneID="zYe-9i-E7f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStoryboard" id="k1W-Mh-Jcl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SBj-fm-3up"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9d-Xu-wmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1993" y="1751"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="4sZ-f9-MBK">
@@ -268,7 +278,7 @@ send Data</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7x-GB-9XV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2169" y="1461"/>
+            <point key="canvasLocation" x="2169" y="1400"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FMo-3p-iDF">
