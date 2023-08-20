@@ -9,21 +9,29 @@ import UIKit
 
 class FirstVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var labelText: UILabel!
+    
+    @IBAction func goToSecondVC(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSecondVC", sender: "Hello from FirstVC")
     }
     
 
-    /*
-    // MARK: - Navigation
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "goToSecondVC",
+           let secondVC = segue.destination as? SecondVC,
+           let dataString = sender as? String {
+            secondVC.dataString = dataString
+        }
     }
-    */
-
 }
