@@ -32,6 +32,7 @@ class FirstVC: UIViewController {
            let secondVC = segue.destination as? SecondVC,
            let dataString = sender as? String {
             secondVC.dataString = dataString
+            secondVC.firstVC = self
         }
     }
 }
