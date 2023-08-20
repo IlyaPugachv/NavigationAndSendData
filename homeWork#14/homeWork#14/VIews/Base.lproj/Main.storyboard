@@ -185,11 +185,17 @@ send Data</string>
                                         <rect key="frame" x="0.0" y="148.66666666666669" width="343" height="54.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separetad Storyboard and send Data"/>
+                                        <connections>
+                                            <action selector="goToFouthWithoutSegue" destination="tRt-zf-Gv9" eventType="touchUpInside" id="1wE-dd-XvT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCb-RY-WbZ">
                                         <rect key="frame" x="0.0" y="233.00000000000003" width="343" height="54.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separetad Storyboard with segue and send Data"/>
+                                        <connections>
+                                            <action selector="goToFouthWithSegue" destination="tRt-zf-Gv9" eventType="touchUpInside" id="HVC-0c-gO3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

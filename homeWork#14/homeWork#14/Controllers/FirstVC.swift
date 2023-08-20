@@ -21,6 +21,34 @@ class FirstVC: UIViewController {
         vc.navigationItem.title = "XIB VC"
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func goToFouthWithoutSegue() {
+        let storyboard = UIStoryboard(name: "SecondStoryboard", bundle: nil)
+        guard let fouthVC = storyboard.instantiateViewController(withIdentifier: "FouthVC") as? FouthVC else { return }
+        fouthVC.navigationItem.title = "Fouth VC"
+        fouthVC.dataString = "Hello from Fouth VC"
+        navigationController?.pushViewController(fouthVC, animated: true)
+    }
+    
+    @IBAction func goToFouthWithSegue() {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToSecondVC",
            let secondVC = segue.destination as? SecondVC,
