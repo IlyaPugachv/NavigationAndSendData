@@ -170,13 +170,16 @@
 send Data</string>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="goToSecondVC:" destination="tRt-zf-Gv9" eventType="touchUpInside" id="MiD-7j-ggV"/>
+                                            <action selector="goToSecondVC:" destination="tRt-zf-Gv9" eventType="touchUpInside" id="eH8-dT-79w"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcU-Bp-Rxc">
                                         <rect key="frame" x="0.0" y="84.333333333333314" width="343" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC with XIB and send Data"/>
+                                        <connections>
+                                            <action selector="goToThirdVC:" destination="tRt-zf-Gv9" eventType="touchUpInside" id="VjH-YS-BLo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEC-tC-zyb">
                                         <rect key="frame" x="0.0" y="148.66666666666669" width="343" height="54.333333333333343"/>

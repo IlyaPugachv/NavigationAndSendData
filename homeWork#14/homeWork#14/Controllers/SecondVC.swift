@@ -23,6 +23,4 @@ class SecondVC: UIViewController {
         firstVC?.navigationItem.title =  "Hello from Secon VC"
         dismiss(animated: true)
     }
-    
-    
 }

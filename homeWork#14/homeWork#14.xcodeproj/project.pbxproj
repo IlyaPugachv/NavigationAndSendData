@@ -83,6 +83,7 @@
 		BC51FD712A8F7EF7006789C2 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				BC1B837C2A92512C00FFB734 /* ThirdVC.xib */,
 				BC51FD622A8F6340006789C2 /* Main.storyboard */,
 				BC51FD672A8F6341006789C2 /* LaunchScreen.storyboard */,
 			);
@@ -95,7 +96,6 @@
 				BC1B83772A9239D200FFB734 /* FirstVC.swift */,
 				BC1B83792A923A8E00FFB734 /* SecondVC.swift */,
 				BC1B837B2A92512C00FFB734 /* ThirdVC.swift */,
-				BC1B837C2A92512C00FFB734 /* ThirdVC.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

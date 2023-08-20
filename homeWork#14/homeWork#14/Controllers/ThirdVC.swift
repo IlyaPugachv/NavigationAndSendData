@@ -8,22 +8,17 @@
 import UIKit
 
 class ThirdVC: UIViewController {
-
+    
+    var dataString: String?
+    
+    @IBOutlet weak var labelText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        labelText.text = dataString
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func backAction(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
-    */
-
 }
